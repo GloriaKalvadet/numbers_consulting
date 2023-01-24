@@ -1,0 +1,58 @@
+@font-face{
+  font-family: "Raleway";
+  src: url(fonts/Raleway-VariableFont_wght.ttf) format(truetype);
+}
+@font-face {
+  font-family: "Merriweather";
+  src: url(fonts/Merriweather-Regular.ttf);
+}
+@font-face {
+  font-family: "Exo 2";
+  src: url(fonts/Exo2-VariableFont_wght.ttf);
+}
+body{
+  font-family: "Raleway";
+  color: #686565;
+}
+.head-picture{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/oslo-skyline-modern-city-architecture-buildings-new-bjorvika-district-norway.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 750px;
+}
+.logo{
+  position:sticky;
+width: 186px;
+height: 47.31px;
+left: 36px;
+top: 36px;
+}
+.rectangle-menu{
+position: sticky;
+width: cover;
+height: 115px;
+left: 0px;
+top: 0px;
+background: rgba(255, 252, 252, 0.75);
+  font-size: 25px;
+  display: flex;
+  flex-direction: row;
+}
+
+header li,
+.no,
+.es,
+.en{
+position: sticky;
+font-weight: 900;
+display: inline-block;
+font-style: normal;
+font-weight: 600;
+font-size: 25px;
+line-height: 47px;
+color: #686565;
+
+}
+header a{
+  text-decoration: none;
+}
