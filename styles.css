@@ -17,25 +17,26 @@ body{
 }
 
 .head-picture{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/oslo-skyline-modern-city-architecture-buildings-new-bjorvika-district-norway.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(images/oslo-skyline-modern-city-architecture-buildings-new-bjorvika-district-norway.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 750px;
+  object-fit: cover;
+  height: 100vh;
+  margin-bottom: 40px;
 }
 .logo{
   position:sticky;
 width: 186px;
 height: 47.31px;
-margin-left: 25px;
+margin-left: 30px;
 top: 36px;
 }
 .menu-container{
 position: sticky;
 width: 100%;
-height: 95px;
-left: 0px;
+height: 105px;
 top: 0px;
-background: rgba(255, 252, 252, 0.75);
+background: rgba(255, 252, 252, 75%);
   font-size: 25px;
   padding-top: 0;
 
@@ -43,11 +44,9 @@ background: rgba(255, 252, 252, 0.75);
 .header{
   display: flex;
 flex-wrap: wrap;
-gap: 10px;
-justify-content: space-around;
+justify-content: space-between;
 vertical-align: top;
-margin-top: 1px;
-padding-top: 0;
+padding-top: 20px;
 }
 
 .header ul,
@@ -57,29 +56,88 @@ padding-top: 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-font-weight: 600;
+font-weight: 400;
 font-size: 25px;
-color: #686565;
+
 vertical-align: top;
 
 }
 .menu a{
-  padding: 0.5rem 1rem;
+  padding: 3rem 1rem;
   text-decoration: none;
   vertical-align: top;
+  color: #686565;
+
 }
 .menu{
-  margin-left: 140px;
+  margin-left: 40px;
+  padding-top: 15px;
+}
+.menu ul{
+  gap: 50px;
 }
 .languages{
   margin-top: 0;
-  padding-top: 0;
   justify-content: flex-end;
+  padding-top: 15px;
+  margin-right: 60px;
+ 
 
 }
 .NO,
 .EN,
 .ES{
   margin: 0;
-  padding: 0;
+  padding: 0; 
+}
+.NO a,
+.EN a,
+.ES a{
+  color: white;
+  text-decoration: none;
+  list-style: none; 
+  font-weight: 500;
+}
+.languages a:hover{
+  color:#F9933E;
+}
+.NO a,
+.EN a{
+  padding-right: 5px;
+  border-right: solid 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-color: #1F73B3;
+}
+.EN a,
+.ES a{
+  padding-left: 5px;
+}
+.menu a:hover{
+  color: #F9933E;
+}
+.accuracy{
+  font-family: "Exo 2";
+  font-weight: 450;
+  text-align: center;
+  color: #1F73B3;
+}
+.line14{
+  width: 40%;
+  color: #F9933E;
+}
+.main-text{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 20px;
+  text-align: center;
+}
+.accountant{
+  background-image: url(images/working-business-lady.jpg);
+  background-repeat: no-repeat;
+  height: 560px;
+  background-size: cover;
 }
