@@ -41,16 +41,19 @@ background: rgba(255, 252, 252, 75%);
   padding-top: 0;
 
 }
-.header{
+.header,
+.footer{
   display: flex;
-flex-wrap: wrap;
+flex-wrap: nowrap;
 justify-content: space-between;
 vertical-align: top;
 padding-top: 20px;
 }
 
 .header ul,
-.languages{
+.footer ul,
+.languages
+{
   list-style: none;
   margin: 0;
   padding: 0;
@@ -73,7 +76,8 @@ vertical-align: top;
   margin-left: 40px;
   padding-top: 15px;
 }
-.menu ul{
+.menu ul,
+.footer ul{
   gap: 50px;
 }
 .languages{
@@ -153,8 +157,7 @@ object-fit: scale-down;
 overflow: hidden;
 margin-bottom: 45px;
 }
-.expertise,
-.our-team{
+.expertise{
   height:max-content;
   background-color: rgba(217, 217, 217, 42%);
   display: flex;
@@ -213,13 +216,15 @@ color: #1F73B3;
   line-height: 125%;
   font-size: 19px;
 }
-.about-us h1{
+.about-us h1,
+.color h1{
   font-family: "Exo 2";
   font-weight: 450;
   color: #1F73B3;
 }
 .about-us span,
-.our-expertise span{
+.our-expertise span,
+.color span{
   text-decoration: underline;
   text-decoration-thickness: 2.5px;
   text-decoration-color: #F9933E;
@@ -232,4 +237,78 @@ color: #1F73B3;
 .yudelkis h2,
 .haakon h2{
   text-align: center;
+  color: #1F73B3;
+}
+.color{
+ background-color: rgba(217, 217, 217, 42%);
+}
+.our-team{
+height:max-content;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+padding-top: 3% ;
+padding-bottom: 3%;
+}
+.color h1{
+  text-align: center;
+  padding-top: 35px;
+}
+.touch{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(images/akrobaten-pedestrian-bridge-oslo-norway.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  height: 680px;
+}
+.touch2{
+padding-left: 40%;
+text-align: center;
+padding-top: 30%;
+}
+.touch2 h2{
+  font-family: "Merriweather";
+  color: white;
+  font-size: 32px;
+  line-height: 0.8;
+}
+.touch2 button,
+.touch2 a{
+  align-items: center;
+border: none;
+cursor: pointer;
+background-color: white;
+font-family: "Raleway";
+color: #1F73B3;
+font-weight: bold;
+padding: 0.7rem 1rem;
+text-decoration:none;
+list-style: none;
+border-radius: 10px;
+}
+
+.touch2 button:hover{
+  border: solid #F9933E;
+  color: white;
+  transition: 0.7s;
+}
+footer{
+  background-color: #F9933E;
+  color: white;
+  padding-top: 10px;
+
+
+}
+.footer a{
+  text-decoration: none;
+  color: white;
+}
+.footer a:hover{
+  text-decoration: underline;
+}
+.footer p{
+  max-width: 220px;
+  text-align: center;
+  font-size: 15px;
+ padding-right: 20px;
 }
