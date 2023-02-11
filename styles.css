@@ -23,6 +23,14 @@ body{
   height: 100vh;
   margin-bottom: 40px;
 }
+.head-picture1{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(images/cooperation-analyst-chart-professional-paper-economics.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  height: 100vh;
+  margin-bottom: 40px;
+}
 .logo{
   position:sticky;
 width: 186px;
@@ -31,13 +39,22 @@ margin-left: 30px;
 top: 36px;
 }
 .menu-container{
-position: sticky;
+position: fixed;
 width: 100%;
 height: 105px;
 top: 0px;
 background: rgba(255, 252, 252, 75%);
   font-size: 25px;
   padding-top: 0;
+}
+.our-services{
+  height: inherit;
+  display: flex;
+  align-items:flex-end;
+  color: white;
+  padding-left: 50px;
+  font-family: "Exo 2";
+  font-size: 2rem;
 }
 .header,
 .footer{
@@ -89,13 +106,13 @@ vertical-align: top;
 .NO a,
 .EN a,
 .ES a{
-  color: white;
+  color:#F9933E;
   text-decoration: none;
   list-style: none; 
   font-weight: 500;
 }
 .languages a:hover{
-  color:#F9933E;
+  color:#1F73B3;
 }
 .NO a,
 .EN a{
@@ -112,7 +129,8 @@ vertical-align: top;
 .menu a:hover{
   color: #F9933E;
 }
-.accuracy{
+.accuracy,
+.servicio-main{
   font-family: "Exo 2";
   font-weight: 450;
   text-align: center;
@@ -196,14 +214,16 @@ color: #1F73B3;
   font-size: 19px;
 }
 .about-us h1,
-.color h1{
+.color h1
+.servicio h1{
   font-family: "Exo 2";
   font-weight: 450;
   color: #1F73B3;
 }
 .about-us span,
 .our-expertise span,
-.color span{
+.color span,
+.servicio-main span{
   text-decoration: underline;
   text-decoration-thickness: 2.5px;
   text-decoration-color: #F9933E;
@@ -304,4 +324,30 @@ footer hr{
   border: none;
   height: 2px;
   background-color: white;
+}
+
+.account-container{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+}
+.account-container div{
+ border: none;
+ background-color: rgba(217, 217, 217, 42%);
+ border-radius: 15px;
+ width: 400px;
+ padding: 1rem;
+ margin-bottom: 20px;
+ box-shadow: 4px 4px rgba(220, 220, 220);
+}
+.account-container li,
+.account-container p{
+  line-height: 2;
+}
+.account-container h2{
+  text-align: center;
+}
+.account-container p{
+  text-align: center;
 }
