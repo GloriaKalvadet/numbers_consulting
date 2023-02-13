@@ -173,8 +173,8 @@ margin-bottom: 45px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  padding-top: 3% ;
-  padding-bottom: 3%;
+  padding-top: 5% ;
+  padding-bottom: 5%;
 }
 .accountant-man img{
   max-width: 380px;
@@ -203,11 +203,11 @@ font-weight: 450;
 color: #1F73B3;
 }
 .about-us{
-  padding-top: 30px;
+  padding-top: 60px;
   text-align: center;
   margin-left: 15%;
   margin-right: 15%;
-  margin-bottom: 4%;
+  margin-bottom: 5%;
 }
 .about-us p{
   line-height: 125%;
@@ -239,6 +239,7 @@ color: #1F73B3;
   color: #1F73B3;
 }
 .color{
+  padding-top: 20px;
  background-color: rgba(217, 217, 217, 42%);
 }
 .our-team{
@@ -250,6 +251,7 @@ padding-top: 3% ;
 padding-bottom: 3%;
 }
 .color h1{
+  color: #1F73B3;
   text-align: center;
   padding-top: 35px;
 }
@@ -350,4 +352,15 @@ footer hr{
 }
 .account-container p{
   text-align: center;
+}
+#input_7{
+  background-color: #F9933E;
+  border: none;
+  border-radius: 10px;
+}
+#input_7:hover{
+  background-color: #1F73B3;
+}
+.form-all{
+  border-radius: 15px;
 }
