@@ -5,41 +5,49 @@
     <meta name="viewport" content="width-device-width, initial-sclae=1">
     <script src="https://kit.fontawesome.com/9998e6f973.js" crossorigin="anonymous"></script>
     <link href="../styles.css" rel="stylesheet">
+    <script src="../script.js"></script>
 <title>Numbers Consulting | Home</title>
   </head>
   <body>
-  <header>
+    <header>
+      <div class="head-picture"> 
+        <div class="menu-container">
+          <nav class="header">
+            <a href="index.html"><img src="../images/numbers-consulting-high-resolution-logo-color-on-transparent-background.png" alt="Logo" class="logo"></a>
+            <button onclick="toggleMenu()" class="menu-toggle">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </button>
+            <div class="menu">
+              <ul>
+                <li><a href="../english/services.html">SERVICES</a></li>
+                <li><a href="#about-us">ABOUT US</a></li>
+                <li><a href="../english/contactus.html">CONTACT</a></li>
+              </ul>
+            </div>
+            <div class="languages">
+              <p class="NO"><a href="../norwegian/index.html">NO</a></p>
+              <p class="EN"><a href="../english/index.html">EN</a></p>
+              <p class="ES"><a href="../spanish/index.html">ES</a></p>
+            </div>
+          </nav>
+          <div class="menu-mobile">
+            <ul>
+              <li><a href="../english/services.html">SERVICES</a></li>
+              <li><a href="#about-us">ABOUT US</a></li>
+              <li><a href="../english/contactus.html">CONTACT</a></li>
+              <li><a href="../norwegian/index.html">NO</a></li>
+              <li><a href="../english/index.html">EN</a></li>
+              <li><a href="../spanish/index.html">ES</a></li>
+            </ul>
+          </div>
+        </div> 
+      </div>
+    </header>
 
-   <div class="head-picture"> 
+    
 
-<div class="menu-container">
-    <nav class="header">
-      
-    <a href="index.html"><img src="../images/numbers-consulting-high-resolution-logo-color-on-transparent-background.png" alt="Logo" class="logo"></a>
-
-    <!-- <button class="menu-toggle">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-  </button> -->
-
-   <div class="menu">
-      <ul>
-        <li><a href="../english/services.html">SERVICES</a></li>
-        <li><a href="#about-us">ABOUT US</a></li>
-        <li><a href="../english/contactus.html">CONTACT</a></li>
-      </ul>
-  </div>
-      <div class="languages">
-      <p class="NO"><a href="../norwegian/index.html">NO</a></p>
-      <p class="EN"><a href="../english/index.html"> EN</a></p>
-     <p class="ES"><a href="../spanish/index.html"> ES</a></p>
-     </div>
-    </nav>
-</div> 
-
-   </div>
-  </header>
   <main>
     <h1 class="accuracy">ACCURACY AND TRANSPARENCY IN EVERY TRANSACTION</h1>
     <hr class="line14"></hr>
@@ -94,9 +102,11 @@
     </div>
     </div>
   </main>
+
+
   <footer>
     <div class="footer">
-    <img src="../images/logo_transparent.png" alt="logo in white" class="logo">
+    <a href="../english/index.html"><img src="../images/logo_transparent.png" alt="logo in white" class="logo"></a>
     <ul>
      <li><a href="../english/contactus.html">CONTACT</a></li>
      <li><a href="../english/services.html">SERVICES</a></li>

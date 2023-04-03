@@ -31,6 +31,14 @@ body{
   height: 100vh;
   margin-bottom: 40px;
 }
+.head-picture3{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(images/businesspeople-working-finance-accounting-analyze-financial-graph-budget-planning-future-office-room.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  height: 85vh;
+  margin-bottom: 40px;
+}
 .logo{
   position:sticky;
 width: 186px;
@@ -313,9 +321,23 @@ footer{
 }
 @media only screen and (max-device-width: 620px){
   .footer p{
-    display: none;
+    display:none;
+  }
+
+}
+@media only screen and (max-device-width: 1000px){
+  .menu ul,
+  .footer ul{
+    gap: 10px;
+    font-size: 18px;
+  }
+  .NO a,
+  .EN a,
+  .ES a{
+    font-size: 18px;
   }
 }
+
 .footer3{
   display: inline-block;
   padding-left: 30px;
@@ -363,9 +385,88 @@ footer hr{
 }
 
 
+.menu-mobile {
+  display: none;
+}
 
+/* Hamburger Icon */
+.menu-toggle {
+  display: block;
+  height: 25px;
+  width: 25px;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+  display: none;
+}
 
+.menu-toggle .bar {
+  display: block;
+  width: 20px;
+  height: 3px;
+  margin-bottom: 5px;
+  background-color:#F9933E;
+}
 
+/* Mobile Menu Styling */
+@media only screen and (max-width: 768px) {
+  .languages{
+    display: none;
+  }
+.menu-container{
+  position: static;
+}
+  /* Show mobile menu */
+  .menu-mobile {
+    display: block;
+    position:relative;
+    top: 0;
+  
+    background: rgba(255, 252, 252, 75%);
+    width: 50%;
+    padding-top: 20px;
+    z-index: 100;
 
+  }
 
+  /* Hide main menu */
+  .menu {
+    display: none;
+  }
 
+  /* Hide hamburger icon */
+  .menu-toggle {
+    display:block;
+  }
+
+  /* Mobile menu list styling */
+  .menu-mobile ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .menu-mobile li {
+    margin-bottom: 10px;
+  }
+
+  .menu-mobile a {
+    display: block;
+    padding: 10px;
+    font-size: 20px;
+    color:#1F73B3;
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+
+  .menu-mobile a:hover {
+    background-color: #f2f2f2;
+    color:#F9933E;
+  }
+
+}
